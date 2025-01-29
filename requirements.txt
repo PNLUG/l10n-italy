@@ -3,6 +3,7 @@ asn1crypto
 codicefiscale
 elementpath
 mock
+num2words
 openupgradelib
 unidecode
 xmlschema
