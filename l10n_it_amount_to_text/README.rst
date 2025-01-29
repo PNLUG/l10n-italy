@@ -113,11 +113,11 @@ questo codice ai report:
    <t t-foreach="docs" t-as="o">
        <t t-set="currency" t-value="o.currency_id"/>
        # Language obtained from context
-       <t t-esc="currency.with_context({'lang': 'it_IT'}).amount_to_text(45.75)"/>
+       <t t-out="currency.with_context(lang='it_IT').amount_to_text(45.75)"/>
 
        # Language obtained from user/partner settings.
        # If not it_IT, Odoo core amount_to_text will be used.
-       <t t-esc="currency.amount_to_text(45.75)"/>
+       <t t-out="currency.amount_to_text(45.75)"/>
    </t>
 
 **English**
@@ -132,11 +132,11 @@ reports:
    <t t-foreach="docs" t-as="o">
        <t t-set="currency" t-value="o.currency_id"/>
        # Language obtained from context
-       <t t-esc="currency.with_context({'lang': 'it_IT'}).amount_to_text(45.75)"/>
+       <t t-out="currency.with_context(lang='it_IT').amount_to_text(45.75)"/>
 
        # Language obtained from user/partner settings.
        # If not it_IT, Odoo core amount_to_text will be used.
-       <t t-esc="currency.amount_to_text(45.75)"/>
+       <t t-out="currency.amount_to_text(45.75)"/>
    </t>
 
 Bug Tracker

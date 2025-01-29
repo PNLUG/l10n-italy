@@ -445,11 +445,11 @@ questo codice ai report:</p>
 &lt;t t-foreach=&quot;docs&quot; t-as=&quot;o&quot;&gt;
     &lt;t t-set=&quot;currency&quot; t-value=&quot;o.currency_id&quot;/&gt;
     # Language obtained from context
-    &lt;t t-esc=&quot;currency.with_context({'lang': 'it_IT'}).amount_to_text(45.75)&quot;/&gt;
+    &lt;t t-out=&quot;currency.with_context(lang='it_IT').amount_to_text(45.75)&quot;/&gt;
 
     # Language obtained from user/partner settings.
     # If not it_IT, Odoo core amount_to_text will be used.
-    &lt;t t-esc=&quot;currency.amount_to_text(45.75)&quot;/&gt;
+    &lt;t t-out=&quot;currency.amount_to_text(45.75)&quot;/&gt;
 &lt;/t&gt;
 </pre>
 <p><strong>English</strong></p>
@@ -460,11 +460,11 @@ reports:</p>
 &lt;t t-foreach=&quot;docs&quot; t-as=&quot;o&quot;&gt;
     &lt;t t-set=&quot;currency&quot; t-value=&quot;o.currency_id&quot;/&gt;
     # Language obtained from context
-    &lt;t t-esc=&quot;currency.with_context({'lang': 'it_IT'}).amount_to_text(45.75)&quot;/&gt;
+    &lt;t t-out=&quot;currency.with_context(lang='it_IT').amount_to_text(45.75)&quot;/&gt;
 
     # Language obtained from user/partner settings.
     # If not it_IT, Odoo core amount_to_text will be used.
-    &lt;t t-esc=&quot;currency.amount_to_text(45.75)&quot;/&gt;
+    &lt;t t-out=&quot;currency.amount_to_text(45.75)&quot;/&gt;
 &lt;/t&gt;
 </pre>
 </div>
